@@ -87,13 +87,22 @@
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s4">
-                        <input placeholder="Assignment Name" id="assignment_name" type="text" class="validate">
+                        <label for="nameInput">Assignment Name:</label>
+                        <input type="text" name="name" id="nameInput" class="validate" data-length="32">
                     </div>
                     <div class="input-field col s4">
-                        <input placeholder="Class Name" id="class_name" type="text" class="validate">
+                        <label for="classNameInput">Class Name:</label>
+                        <input type="text" name="className" id="classNameInput">
                     </div>
                     <div class="input-field col s4">
-                        <input placeholder="Due Date" id="due_date" type="date" class="validate">
+                        <label for="dueDateInput">Due Date:</label>
+                        <input type="text" class="datepicker" id="dueDateInput">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="descriptionInput">Assignment Description:</label>
+                        <input type="text" name="description" id="descriptionInput" data-length="100">
                     </div>
                 </div>
             </form>
